@@ -33,10 +33,19 @@ By doing so, CORAL-CNN ensures that it produces predictions with rank consistenc
 
 <p align = "center" >
 
-<img width="600" src="https://github.com/fefei69/Alzheimer-Patients-face-aging-analysis/blob/master/img/1.jpg" alt="sometext"/>
+<img width="600" src="https://github.com/fefei69/Alzheimer-Patients-face-aging-analysis/blob/master/img/1.jpg"/>
 
 </p>
 
+<p align="center">Figure 1: Diagram illustrating the simplification of a multi-class classification problem into multiple binary classification problems.</p>
+
+<p align = "center" >
+
+<img width="600" src="https://github.com/fefei69/Alzheimer-Patients-face-aging-analysis/blob/master/img/2.png"/>
+
+</p>
+
+<p align="center">Figure 2: Illustration of the predicted probabilities for Rank consistency and Rank inconsistency. When using the OR-CNN method, the predicted probabilities cannot exhibit a monotonic decreasing pattern (as shown in the right diagram) to maintain Rank consistency (as shown in the left diagram).</p>
 
 Materials and Method
 ---
