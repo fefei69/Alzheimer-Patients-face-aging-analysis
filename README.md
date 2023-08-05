@@ -91,6 +91,19 @@ Therefore, directly applying a pre-trained model to this study's dataset is not 
 
 <p align="center">Table 2. Informations of our dataset</p>
 
+<p align = "center" >
+
+<img width="400" length="400" src="https://github.com/fefei69/Alzheimer-Patients-face-aging-analysis/blob/master/img/3.png"/><img width="400" length="400" src="https://github.com/fefei69/Alzheimer-Patients-face-aging-analysis/blob/master/img/4.png"/>
+
+</p>
+
+<p align="center">Figure 3: Histogram of the Family Dataset.</p>
+Figure 3: Histogram of the Family Dataset.
+Figure 4: Histogram of the Patient Dataset.
+</p>
+
+<p align="center">Figure 4: Histogram of the Patient Dataset.</p>
+
 
 Proposed Method
 ---
