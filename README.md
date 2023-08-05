@@ -48,15 +48,7 @@ Furthermore, the neural network has not been trained on data above 70 years, mak
 
 Therefore, directly applying a pre-trained model to this study's dataset is not suitable, and additional efforts are needed to address the specific age range and characteristics of the elderly individuals in this research.
 
-<style>
-.center 
-{
-  width: auto;
-  display: table;
-  margin-left: auto;
-  margin-right: auto;
-}
-</style>
+
 
 <div align="center">
     
@@ -68,7 +60,7 @@ Therefore, directly applying a pre-trained model to this study's dataset is not 
 
 </div>
 
-<p style="text-align: center;">Table 1. comparison of different datasets</p>
+<p align="center">Table 1. comparison of different datasets</p>
 
 <div class="center">
     
@@ -80,7 +72,7 @@ Therefore, directly applying a pre-trained model to this study's dataset is not 
     
 </div>
 
-<p style="text-align: center;">Table 2. Informations of our dataset</p>
+<p align="center">Table 2. Informations of our dataset</p>
 
 
 Proposed Method
