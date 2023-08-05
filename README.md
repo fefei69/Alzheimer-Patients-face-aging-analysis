@@ -1,6 +1,13 @@
 Identifying And Analyzing Face Aging in Alzheimer's Patients using Deep Learning Methods
 ---
 
+-[Introduction](#introduction)
+-[Materials and Method](#materials-and-method)
+-[Proposed Method](#proposed-method)
+-[Results](#results)
+-[Reference](#reference)
+
+
 
 Introduction
 ---
@@ -23,7 +30,7 @@ To ensure rank monotonicity and improve the accuracy of age prediction in this s
 
 By doing so, CORAL-CNN ensures that it produces predictions with rank consistency, addressing the rank inconsistency problem encountered in OR-CNN and improving the prediction accuracy. Therefore, in this study, to achieve better accuracy in predicting age, which is an ordered data type, we adopt CORAL-CNN as the tool to estimate ages from facial images.
 
-Materials and Methods
+Materials and Method
 ---
 In the CORAL-CNN method, three datasets were used to test the model's performance. These datasets are as follows:
 
@@ -75,7 +82,7 @@ Therefore, directly applying a pre-trained model to this study's dataset is not 
 <p style="text-align: center;">Table 2. Informations of our dataset</p>
 
 
-Proposed Methods
+Proposed Method
 ---
 The objective of this research is to verify whether Alzheimer's disease patients show accelerated aging in their visual appearance, meaning that their facial visual age may appear older than their actual age. Therefore, we will separately estimate the ages of Alzheimer's disease patients and non-affected family members. We will analyze the differences in age estimation errors between the two datasets. However, as mentioned earlier, the age distributions in the three datasets used in the CORAL-CNN method (MORPH-2, CACD, and AFAD) are lower than those in the Alzheimer's disease patient and family datasets. Hence, we cannot directly use models trained on these three datasets to predict the ages of our dataset.
 
