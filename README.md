@@ -148,7 +148,7 @@ Results
 
 To ensure that the fitting equation is not a result of specific data combinations and to minimize the prediction bias caused by the limited data, we conducted 100 rounds of fitting and correction. For each round, we randomly selected 230 samples from the family dataset for fitting and applied the correction on the remaining 23 samples of family members and 1722 samples of patients. We then averaged the corrected prediction errors for each sample over nine times for family members (i.e., each sample was selected on average 23/253 * 100 times) and 100 times for patients. We analyzed the relationship between the corrected prediction errors and the true ages (as shown in Figure 10). The fitting line for the family dataset (in red) was close to horizontal, indicating that the corrected family dataset successfully eliminated the correlation between the prediction errors and the true ages, demonstrating the representativeness of our algorithm (as shown in Figure 8) for predicting the facial ages of healthy elderly individuals. In contrast, the fitting line for the patient dataset still exhibited a linear trend, but this trend was much milder after correction. The slope of the fitting line for the patient dataset decreased from -0.461 to -0.084 after correction. It is worth mentioning that our research aims to explore whether patients show accelerated facial aging compared to healthy individuals (family members). Thus, the difference in prediction results between patients and family members is the focus of our analysis. As previously mentioned, the CORAL-CNN architecture is more adept at learning age classification problems in lower age groups (e.g., 60-69 years) compared to higher age groups (e.g., 90-99 years). Therefore, the linear trend observed in the patient data after correction (as shown by the red line in Figure 10) indicates that the model tends to overestimate the ages of patients with lower actual ages and underestimate the ages of patients with higher actual ages. This finding confirms the phenomenon of accelerated visual aging in Alzheimer's disease patients. The model struggles to distinguish the visual age differences among elderly individuals, leading it to output the average value for different age groups and causing the prediction errors to become negative for older ages. Additionally, we performed a Hypothesis T-Test by averaging all the corrected prediction errors for family members and patients to test if the patients' prediction errors were significantly greater than those of family members. The null hypothesis $H_0: μ_{Pt} - μ_{Fm} > 0$ and the alternative hypothesis $H_1: μ_{Pt} - μ_{Fm} ≤ 0$. The P-value obtained was 0.117 (two-tailed), indicating that the patients' prediction errors were statistically larger than those of family members, further supporting the existence of accelerated facial aging in Alzheimer's disease patients compared to healthy individuals.
 
-p align = "center" >
+<p align = "center" >
 
 <img width="400" src="https://github.com/fefei69/Alzheimer-Patients-face-aging-analysis/blob/master/img/7.png"/>
 
@@ -156,7 +156,7 @@ p align = "center" >
 
 <p align="center">Fig. 8. Schematic illustration of our facial age prediction algorithm.</p>
 
-p align = "center" >
+<p align = "center" >
 
 <img width="400" src="https://github.com/fefei69/Alzheimer-Patients-face-aging-analysis/blob/master/img/9.png"/>
 
