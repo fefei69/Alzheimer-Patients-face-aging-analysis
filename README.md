@@ -37,7 +37,7 @@ By doing so, CORAL-CNN ensures that it produces predictions with rank consistenc
 
 </p>
 
-<p align="center">Figure 1: Diagram illustrating the simplification of a multi-class classification problem into multiple binary classification problems.</p>
+<p align="center">Fig. 1. Diagram illustrating the simplification of a multi-class classification problem into multiple binary classification problems.</p>
 
 <p align = "center" >
 
@@ -45,7 +45,7 @@ By doing so, CORAL-CNN ensures that it produces predictions with rank consistenc
 
 </p>
 
-<p align="center">Figure 2: Illustration of the predicted probabilities for Rank consistency and Rank inconsistency. When using the OR-CNN method, the predicted probabilities cannot exhibit a monotonic decreasing pattern (as shown in the right diagram) to maintain Rank consistency (as shown in the left diagram).</p>
+<p align="center">Fig. 2. Illustration of the predicted probabilities for Rank consistency and Rank inconsistency. When using the OR-CNN method, the predicted probabilities cannot exhibit a monotonic decreasing pattern (as shown in the right diagram) to maintain Rank consistency (as shown in the left diagram).</p>
 
 Materials and Method
 ---
@@ -97,12 +97,11 @@ Therefore, directly applying a pre-trained model to this study's dataset is not 
 
 </p>
 
-<p align="center">Figure 3: Histogram of the Family Dataset.</p>
-Figure 3: Histogram of the Family Dataset.
-Figure 4: Histogram of the Patient Dataset.
+<p align="center">Fig. 3. Histogram of the Family Dataset.Fig. 4. Histogram of the Patient Dataset.</p>
+   
 </p>
 
-<p align="center">Figure 4: Histogram of the Patient Dataset.</p>
+<p align="center">Fig. 4. Histogram of the Patient Dataset.</p>
 
 
 Proposed Method
