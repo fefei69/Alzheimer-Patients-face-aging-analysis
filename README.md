@@ -62,7 +62,7 @@ Therefore, directly applying a pre-trained model to this study's dataset is not 
 
 <p align="center">Table 1. comparison of different datasets</p>
 
-<div class="center">
+<div align="center">
     
 |              | **Number** | **AVG±STD** | **Age Range** |
 | ------------ |:----------:|:-----------:|:-------------:|
