@@ -36,9 +36,6 @@ By doing so, CORAL-CNN ensures that it produces predictions with rank consistenc
 
 </div>
 
-![image](https://github.com/fefei69/Alzheimer-Patients-face-aging-analysis/blob/master/img/1.jpg)
-
-![image](https://github.com/fefei69/Alzheimer-Patients-face-aging-analysis/blob/master/img/10.png)
 
 Materials and Method
 ---
