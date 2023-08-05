@@ -246,3 +246,4 @@ in: Bengio, Y., LeCun, Y. (Eds.), 3rd International Conference on Learning
 Representations, ICLR 2015, San Diego, CA, USA, May 7-9, 2015, Conference
 Track Proceedings, pp. 1–8. URL: http://arxiv.org/abs/1412.6980.
 
+[back to top](#identifying-and-analyzing-face-aging-in-alzheimers-patients-using-deep-learning-methods)
