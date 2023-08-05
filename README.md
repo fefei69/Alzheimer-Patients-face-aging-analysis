@@ -150,7 +150,7 @@ To ensure that the fitting equation is not a result of specific data combination
 
 <p align = "center" >
 
-<img width="400" src="https://github.com/fefei69/Alzheimer-Patients-face-aging-analysis/blob/master/img/7.png"/>
+<img width="700" src="https://github.com/fefei69/Alzheimer-Patients-face-aging-analysis/blob/master/img/7.png"/>
 
 </p>
 
