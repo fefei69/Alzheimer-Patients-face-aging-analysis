@@ -65,6 +65,7 @@ Therefore, directly applying a pre-trained model to this study's dataset is not 
 | **MORPH-2**  |     16-70     |         HIgh         | 2.64±0.02 / 3.65±0.04 |
 | **CACD**     |     14-62     |        Medium        | 3.47±0.05 / 4.71±0.06 |
 | **AFAD**     |     15-40     |         Low          | 5.25±0.01 / 7.48±0.06 |
+
 </div>
 
 <p style="text-align: center;">Table 1. comparison of different datasets</p>
