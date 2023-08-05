@@ -1,11 +1,11 @@
 Identifying And Analyzing Face Aging in Alzheimer's Patients using Deep Learning Methods
 ---
 
--[Introduction](#introduction)
--[Materials and Method](#materials-and-method)
--[Proposed Method](#proposed-method)
--[Results](#results)
--[Reference](#reference)
+- [Introduction](#introduction)
+- [Materials and Method](#materials-and-method)
+- [Proposed Method](#proposed-method)
+- [Results](#results)
+- [Reference](#reference)
 
 
 
