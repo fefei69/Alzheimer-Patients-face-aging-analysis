@@ -58,7 +58,7 @@ Therefore, directly applying a pre-trained model to this study's dataset is not 
 }
 </style>
 
-<div class="center">
+<div align="center">
     
 | **Datasets** | **Age Range** | **Image Resolution** |     **MAE/RMSE**      |
 | ------------ |:-------------:|:--------------------:|:---------------------:|
