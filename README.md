@@ -30,11 +30,12 @@ To ensure rank monotonicity and improve the accuracy of age prediction in this s
 
 By doing so, CORAL-CNN ensures that it produces predictions with rank consistency, addressing the rank inconsistency problem encountered in OR-CNN and improving the prediction accuracy. Therefore, in this study, to achieve better accuracy in predicting age, which is an ordered data type, we adopt CORAL-CNN as the tool to estimate ages from facial images.
 
-<div align = "center >
 
-<img src="https://github.com/fefei69/Alzheimer-Patients-face-aging-analysis/blob/master/img/1.jpg"/>
+<p align = "center" >
 
-</div>
+<img width="200" src="https://github.com/fefei69/Alzheimer-Patients-face-aging-analysis/blob/master/img/1.jpg"/>
+
+</p>
 
 
 Materials and Method
