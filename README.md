@@ -33,7 +33,7 @@ By doing so, CORAL-CNN ensures that it produces predictions with rank consistenc
 
 <p align = "center" >
 
-<img width="600" src="https://github.com/fefei69/Alzheimer-Patients-face-aging-analysis/blob/master/img/1.jpg"/>
+<img width="600" src="https://github.com/fefei69/Alzheimer-Patients-face-aging-analysis/blob/master/img/1.jpg" alt="sometext"/>
 
 </p>
 
