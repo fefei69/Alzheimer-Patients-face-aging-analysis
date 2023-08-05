@@ -97,11 +97,10 @@ Therefore, directly applying a pre-trained model to this study's dataset is not 
 
 </p>
 
-<p align="center">Fig. 3. Histogram of the Family Dataset.Fig. 4. Histogram of the Patient Dataset.</p>
-   
-</p>
+<p align="center">Fig. 3. Histogram of the Family Dataset. Fig. 4. Histogram of the Patient Dataset.</p>
 
-<p align="center">Fig. 4. Histogram of the Patient Dataset.</p>
+
+
 
 
 Proposed Method
@@ -110,13 +109,29 @@ The objective of this research is to verify whether Alzheimer's disease patients
 
 In typical image classification tasks requiring the transfer of a model from a source domain to a similar target domain with a smaller dataset, the Transfer Learning technique is often used. It involves freezing most of the neural network's front layers and training only the non-frozen layers on the target domain dataset. In this research, we theoretically could have employed the Transfer Learning technique by freezing the early layers of CORAL-CNN and training the last few layers with the family dataset to adapt the pre-trained CORAL-CNN model to the target domain of family members (unseen test set) and patients, as shown in Figure 5. This would enable the tuned model to perform well in predicting the ages of family members and patients in the higher age range. However, the target domain for this research, the family dataset, contains too few data points (only 253 samples), making it susceptible to overfitting during training. Overfitting would cause the model to memorize the training data and perform poorly on unseen test data, resulting in large prediction errors.
 
-To address this issue, we used the UTKface dataset [18], which contains a large number of facial images with age distributions ranging from 0 to 116 years. We extracted a subset of the UTKface dataset with ages ranging from 52 to 96 years, aligning more closely with the age distributions in the family and patient datasets (52 to 99 years). This subset contained 4429 facial images with a mean age of 64.82 years (as shown in Table 2).
+<p align = "center" >
+
+<img width="400" src="https://github.com/fefei69/Alzheimer-Patients-face-aging-analysis/blob/master/img/5.png"/>
+
+</p>
+
+<p align="center">Fig. 5. Illustration of using Transfer Learning techniques to transfer a pre-trained model from a younger Source Domain to our older Target Domain.</p>
+
+To address this issue, we used the UTKface dataset [[18]](#reference), which contains a large number of facial images with age distributions ranging from 0 to 116 years. We extracted a subset of the UTKface dataset with ages ranging from 52 to 96 years, aligning more closely with the age distributions in the family and patient datasets (52 to 99 years). This subset contained 4429 facial images with a mean age of 64.82 years (as shown in Table 2).
 
 For model training, we split the 4429 UTKface samples into 3543 training samples, 443 validation samples, and 443 test samples. We used the CORAL-CNN architecture and trained the model from scratch, observing significant improvements in Mean Absolute Error (MAE) for training, testing, and validation sets when we increased the input size to 224x224 pixels. This improvement might be attributed to the less pronounced facial features of elderly individuals, such as wrinkles, which reduce the differences in facial age among elderly individuals compared to younger individuals, as shown in Figure 6. As a result, the neural network faces greater difficulty in distinguishing between two elderly individuals in their 70s and 80s than between two young individuals in their 10s and 20s. Thus, CORAL-CNN had difficulty training a suitable model when the input size was 120x120 pixels. However, when the input size increased to 224x224 pixels, the model learned the subtle facial features of elderly individuals.
 
-Regarding the parameter settings for model training, most of the parameters were the same as in the CORAL-CNN method, with a learning rate α = 5×10-5, the Adam optimizer [19], and 200 epochs.
+<p align = "center" >
 
-Since the subset of UTKface dataset (4429 samples) used in our study is significantly smaller than the datasets used in CORAL-CNN (MORPH-2, CACD, and AFAD)[14], there is a risk of overfitting due to the limited data size during training. To assess the model's generalization capability, we analyzed the relationship between the true age and the prediction errors on the test and training sets (as shown in Figure 8). The ideal scenario is that the regression lines fitted to the test and training datasets are close to horizontal, indicating that the true age and the model's prediction errors are unrelated. When a linear trend exists between the true age and the prediction errors (as shown by the red line in Figure 8), it indicates a certain level of association between the true age and the prediction errors, implying that the model has not learned well. If the regression line slopes toward -1, it suggests that the model tends to output the same value for different ages, indicating severe overfitting. Interestingly, when analyzing CORAL-CNN's pre-trained model on the CACD dataset, we found that the model's test dataset also exhibited a linear trend similar to our model. This suggests that the linear trend might be an issue inherent in using classification-based methods for age estimation.
+<img width="400" src="https://github.com/fefei69/Alzheimer-Patients-face-aging-analysis/blob/master/img/6.png"/>
+
+</p>
+
+<p align="center">Fig. 6. Comparison of facial age differences between elderly and young individuals. Even though both pairs have a 15-year age difference, the facial age difference between the 20 years old and 35 years old on the left is more apparent than the 66 years old and 81 years old on the right.</p>
+
+Regarding the parameter settings for model training, most of the parameters were the same as in the CORAL-CNN method, with a learning rate α = 5×10-5, the Adam optimizer [[19]](#reference), and 200 epochs.
+
+Since the subset of UTKface dataset (4429 samples) used in our study is significantly smaller than the datasets used in CORAL-CNN (MORPH-2, CACD, and AFAD)[[14]](#reference), there is a risk of overfitting due to the limited data size during training. To assess the model's generalization capability, we analyzed the relationship between the true age and the prediction errors on the test and training sets (as shown in Figure 8). The ideal scenario is that the regression lines fitted to the test and training datasets are close to horizontal, indicating that the true age and the model's prediction errors are unrelated. When a linear trend exists between the true age and the prediction errors (as shown by the red line in Figure 8), it indicates a certain level of association between the true age and the prediction errors, implying that the model has not learned well. If the regression line slopes toward -1, it suggests that the model tends to output the same value for different ages, indicating severe overfitting. Interestingly, when analyzing CORAL-CNN's pre-trained model on the CACD dataset, we found that the model's test dataset also exhibited a linear trend similar to our model. This suggests that the linear trend might be an issue inherent in using classification-based methods for age estimation.
 
 Results
 ---
